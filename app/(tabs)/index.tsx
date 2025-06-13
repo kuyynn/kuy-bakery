@@ -5,8 +5,7 @@ import { X, ShoppingCart, Search, MapPin } from 'lucide-react-native';
 import { ProductCard } from '@/components/ProductCard';
 import { Product } from '@/types';
 import { useCart } from '@/contexts/CartContext';
-import { supabase } from '@/lib/supabase'; // pastikan file ini ada dan dikonfigurasi
-
+import { supabase } from '@/lib/supabase'; 
 export default function HomeScreen() {
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);

@@ -5,9 +5,16 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "expo-router"
+      }
+    ]
   },
   "include": [
+    "app",
+    "types",
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
